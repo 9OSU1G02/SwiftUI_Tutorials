@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "A6F1DF82-1F71-46CA-A584-6913F32895FB",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SwiftCalc.xcodeproj",
+      "identifier" : "18D775BC22AD944300AE281E",
+      "name" : "SwiftCalc"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SwiftCalc.xcodeproj",
+        "identifier" : "463B64CF2AD99BB300D50B2F",
+        "name" : "SwiftCalcUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
