@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScoreView: View {
-    let numberOfQuestions: Int
+    @Binding var numberOfQuestions: Int
     @Binding var numberOfAnswered: Int
 
     var body: some View {
@@ -23,6 +23,7 @@ struct ScoreView: View {
 }
 
 #Preview {
+    @State var numberOfQuestions = 5
     @State var numberOfAnswered: Int = 0
-    return ScoreView(numberOfQuestions: 5, numberOfAnswered: $numberOfAnswered)
+    return ScoreView(numberOfQuestions: $numberOfQuestions, numberOfAnswered: $numberOfAnswered)
 }

@@ -8,7 +8,7 @@ struct QuestionPerSessionKey: EnvironmentKey {
 }
 
 extension EnvironmentValues {
-    var questionPerSession: Int {
+    var questionsPerSession: Int {
         get { self[QuestionPerSessionKey.self] }
         set { self[QuestionPerSessionKey.self] = newValue }
     }
@@ -52,7 +52,7 @@ class ChallengesViewModel: ObservableObject {
     var allAnswers: [String] { return Self.challenges.map { $0.answer }}
     var correctAnswers: [Challenge] = []
     var wrongAnswers: [Challenge] = []
-    private(set) var numberOfQuestions = 6
+    @AppStorage("numberOfQuestions") var numberOfQuestions = 6
     var numberOfAnswered: Int { return correctAnswers.count }
     @Published var currentChallenge: ChallengeTest?
   

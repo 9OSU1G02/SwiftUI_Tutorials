@@ -3,7 +3,8 @@ import SwiftUI
 struct ChallengeView: View {
     let challengeTest: ChallengeTest
     @Environment(\.verticalSizeClass) var verticalSizeClass
-    @Environment(\.questionPerSession) var questionPerSession
+    @Environment(\.questionsPerSession) var questionPerSession
+    @EnvironmentObject var challengesViewModel: ChallengesViewModel
     @State var showAnswers = false
     @Binding var numberOfAnswered: Int
     var body: some View {
@@ -25,7 +26,7 @@ struct ChallengeView: View {
             }
           }
           ScoreView(
-            numberOfQuestions: questionPerSession,
+            numberOfQuestions: $challengesViewModel.numberOfQuestions,
             numberOfAnswered: $numberOfAnswered
           )
         }
@@ -40,7 +41,7 @@ struct ChallengeView: View {
               .frame(height: 300)
           }
           ScoreView(
-            numberOfQuestions: questionPerSession,
+            numberOfQuestions: $challengesViewModel.numberOfQuestions,
             numberOfAnswered: $numberOfAnswered
           )
           if showAnswers {
