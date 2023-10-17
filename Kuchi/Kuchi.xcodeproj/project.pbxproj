@@ -54,6 +54,12 @@
 		466D72EF2ADC2DC000324A45 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D72ED2ADC2DC000324A45 /* RegisterView.swift */; };
 		466D72F12ADC33C700324A45 /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D72F02ADC33C700324A45 /* BorderedViewModifier.swift */; };
 		466D72F22ADC33C700324A45 /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D72F02ADC33C700324A45 /* BorderedViewModifier.swift */; };
+		46F9D9072ADE83F9001D511E /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D9062ADE83F9001D511E /* LearnView.swift */; };
+		46F9D9092ADE84A0001D511E /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D9082ADE84A0001D511E /* FlashCard.swift */; };
+		46F9D90B2ADE8756001D511E /* FlashDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D90A2ADE8756001D511E /* FlashDeck.swift */; };
+		46F9D90D2ADE87FD001D511E /* LearningStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D90C2ADE87FD001D511E /* LearningStore.swift */; };
+		46F9D90F2ADE889E001D511E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D90E2ADE889E001D511E /* CardView.swift */; };
+		46F9D9112ADE895B001D511E /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D9102ADE895B001D511E /* DeckView.swift */; };
 		57578FDE24E9D943003465A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57578FA724E9D943003465A4 /* HomeView.swift */; };
 		57578FDF24E9D943003465A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57578FA724E9D943003465A4 /* HomeView.swift */; };
 		57578FE224E9D943003465A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57578FAA24E9D943003465A4 /* Assets.xcassets */; };
@@ -91,6 +97,12 @@
 		466D72EA2ADC2B9E00324A45 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		466D72ED2ADC2DC000324A45 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		466D72F02ADC33C700324A45 /* BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifier.swift; sourceTree = "<group>"; };
+		46F9D9062ADE83F9001D511E /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		46F9D9082ADE84A0001D511E /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+		46F9D90A2ADE8756001D511E /* FlashDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashDeck.swift; sourceTree = "<group>"; };
+		46F9D90C2ADE87FD001D511E /* LearningStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningStore.swift; sourceTree = "<group>"; };
+		46F9D90E2ADE889E001D511E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		46F9D9102ADE895B001D511E /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 		57578FA724E9D943003465A4 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		57578FAA24E9D943003465A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57578FAC24E9D943003465A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -185,6 +197,19 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		46F9D9052ADE83D6001D511E /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				46F9D9062ADE83F9001D511E /* LearnView.swift */,
+				46F9D9082ADE84A0001D511E /* FlashCard.swift */,
+				46F9D90A2ADE8756001D511E /* FlashDeck.swift */,
+				46F9D90C2ADE87FD001D511E /* LearningStore.swift */,
+				46F9D90E2ADE889E001D511E /* CardView.swift */,
+				46F9D9102ADE895B001D511E /* DeckView.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
 		57578FA924E9D943003465A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +241,7 @@
 		57EF33FF24E89F91004ABEB2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				46F9D9052ADE83D6001D511E /* Learn */,
 				462B36BE2ADD93FB00F67AE8 /* Settings */,
 				462B36B42ADD93A800F67AE8 /* Utils */,
 				46110DEF2ADCE34800AB6D43 /* Practice */,
@@ -367,6 +393,7 @@
 				466D72DF2ADC2A3B00324A45 /* Profile.swift in Sources */,
 				4616F7D12ADAE241002BFEF2 /* WelcomeView.swift in Sources */,
 				466D72EB2ADC2B9E00324A45 /* WelcomeMessageView.swift in Sources */,
+				46F9D90F2ADE889E001D511E /* CardView.swift in Sources */,
 				46110E0C2ADD367300AB6D43 /* ScoreView.swift in Sources */,
 				46110E092ADCE35F00AB6D43 /* HistoryView.swift in Sources */,
 				46110DFD2ADCE34800AB6D43 /* ChallengesViewModel.swift in Sources */,
@@ -374,16 +401,21 @@
 				4616F7D42ADAF434002BFEF2 /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				466D72E12ADC2A3B00324A45 /* Settings.swift in Sources */,
 				466D72DD2ADC2A3B00324A45 /* UserManager.swift in Sources */,
+				46F9D9072ADE83F9001D511E /* LearnView.swift in Sources */,
 				46110DFB2ADCE34800AB6D43 /* CongratulationsView.swift in Sources */,
 				46110DF92ADCE34800AB6D43 /* QuestionView.swift in Sources */,
+				46F9D90D2ADE87FD001D511E /* LearningStore.swift in Sources */,
 				46110E012ADCE34800AB6D43 /* ChallengeView.swift in Sources */,
 				466D72E52ADC2ADF00324A45 /* WelcomeBackgroundImage.swift in Sources */,
 				46110E072ADCE35F00AB6D43 /* StarterView.swift in Sources */,
 				46110DF72ADCE34800AB6D43 /* ChoicesView.swift in Sources */,
 				46110E032ADCE34800AB6D43 /* ChoicesRow.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,
+				46F9D9112ADE895B001D511E /* DeckView.swift in Sources */,
 				462B36B82ADD93A800F67AE8 /* Color+Extension.swift in Sources */,
+				46F9D9092ADE84A0001D511E /* FlashCard.swift in Sources */,
 				462B36C02ADD940A00F67AE8 /* SettingsView.swift in Sources */,
+				46F9D90B2ADE8756001D511E /* FlashDeck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
